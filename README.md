@@ -48,10 +48,13 @@ For a print that lasted 15 minutes
 
 | Status            | Sensor location   | TVOC              | HCHO  | PM1.0 | PM2.5 | PM10 |
 |-------------------|-------------------|-------------------|-------|-------|-------|------|
-| Before  printing  | On the  printer   | 0,252             | 0,036 | 001   | 003   | 004  |
-| While   printing  | On the  printer   | 0,6               |       | 001   | 003   | 004  |
+| Before  printing  |                   |                   |       |       |       |      | 
+|                   | On the  printer   | 0,252             | 0,036 | 001   | 003   | 004  |
+| While   printing  |                   |                   |       |       |       |      | 
+|                   | On the  printer   | 0,6               |       | 001   | 003   | 004  |
 |                   | In the enclosure  | 4,5               |       | 001   | 003   | 004  |
-| After   printing  | In the enclosure  | 9,999  (00h00)    | 0,844 | 001   | 003   | 004  |
+| After   printing  |                   |                   |       |       |       |      | 
+|                   | In the enclosure  | 9,999  (00h00)    | 0,844 | 001   | 003   | 004  |
 |                   |                   | 6,355  (00h15)    | 0,811 | 001   | 003   | 004  |
 |                   |                   | 6,00   (00h25)    | 0,770 | 001   | 003   | 004  |
 |                   |                   | 5,9    (00h35)    | 0,450 | 001   | 003   | 004  |
@@ -87,21 +90,17 @@ After 9 minutes, I activated the Aux Fan to 100%
 
 | Status          | Sensor location  | TVOC                  | HCHO  | PM1.0 | PM2.5 | PM10 |
 |-----------------|------------------|-----------------------|-------|-------|-------|------|
-| Before printing | On the printer   | 0,252                 | 0,036 | 001   | 003   | 004  |
-| While printing  | On the printer   | 0,266                 | 0,04  | 001   | 003   | 004  |
+| Before printing |                  |                       |       |       |       |      |
+|                 | On the printer   | 0,252                 | 0,036 | 001   | 003   | 004  |
+| While printing  |                  |                       |       |       |       |      |
+|                 | On the printer   | 0,266                 | 0,04  | 001   | 003   | 004  |
 |                 | In the enclosure | 4,620                 | 0,729 | 001   | 003   | 004  |
 | After print     |                  |                       |       |       |       |      |
 |                 | In the enclosure | 6,227 (0h00)          | 0,787 | 001   | 003   | 004  |
-|                 |                  |                       |       |       |       |      |
-|                 |                  | 15h18                 | 0,729 |       |       |      |
-|                 |                  |                       |       |       |       |      |
-|                 |                  | 4,620 (00h05)         | 0,469 |       |       |      |
-|                 |                  |                       |       |       |       |      |
-|                 |                  | 4,567 (00h09)         | 0,287 |       |       |      |
-|                 |                  |                       |       |       |       |      |
-|                 |                  | 1,462 (00h12)         |       |       |       |      |
+|                 |                  | 4,620 (00h05)         | 0,729 |       |       |      |
+|                 |                  | 4,567 (00h09)         | 0,469 |       |       |      |
+|                 |                  | 1,462 (00h12)         |0,287  |       |       |      |
 |                 | On the printer   | 0,768 (00h12)         | N/A   |       |       |      |
-|                 |                  |                       |       |       |       |      |
 |                 |                  | 0,476 (00h15)         | 0,066 |       |       |      |
 
 
