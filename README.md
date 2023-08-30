@@ -31,11 +31,14 @@ filaments that I'm using and find behavior to improve the situation.
     - [https://www.printables.com/model/272525-bentobox-v20-carbon-filter-for-bambu-lab-x1c-enclo](https://www.printables.com/model/272525-bentobox-v20-carbon-filter-for-bambu-lab-x1c-enclo)
 - Room with a fan directing the air oustide
 
-# PLA
 
-## Test #1 - 2023-08-26
+# Test #1 - PLA - 2023-08-26
 
-### Printer Parameters
+## Objective
+Observe the behavior under normal conditions
+
+
+## Printer Parameters
 
 - PEI Texture plate
 - Fan
@@ -60,27 +63,29 @@ For a print that lasted 15 minutes
 |                   |                   | 5,9    (00h35)    | 0,450 | 001   | 003   | 004  |
 |                   |                   | 4.4    (01h14)    | N/A   | 001   | 003   | 004  |
 
+## Conclusion
+The TVOC is very high even after an hour and with the Bento Box that is supposed to filter the air.
+Recommandation, open the door quickly, take the plate and close the door before removing the objects in the printer.
 
 
 
+# Test #2 - PETG - 2023-08-26 - Enabling the Chamber Fan
 
-# PETG
+## Objective
+If I enable the Chamber Fan, will it make a difference with the TVOC inside the enclosure
 
-## Test #1 - 2023-08-26
-
-### Printer Parameters
+## Printer Parameters
 
 - PEI Texture plate
 
 - Fan
-  
   - Part = 90%
   - Aux = 0%
   - Chamber = 70%
 
 - Matreio3D White
 
-### Measurements
+## Measurements
 
 For a print that lasted 15 minutes
 
@@ -103,7 +108,48 @@ After 9 minutes, I activated the Aux Fan to 100%
 |                 | On the printer   | 0,768 (00h12)         | N/A   |       |       |      |
 |                 |                  | 0,476 (00h15)         | 0,066 |       |       |      |
 
+## Conclusion
+The Chamber Fan running for approx 10 minutes really makes a difference by cleaning the air through the Carbon Filter.
 
+# Test #3 - PETG - 2023-08-29- Enabling the Aux Fan
+
+## Objective
+I want to verify if there is a circulation of the air with the Auxiliary fan, will the Bento Box Filter be more efficient with its carbon filter?
+
+## Printer Parameters
+
+- PEI Texture plate
+
+- Fan
+  
+  - Part = 90%
+  - Aux = 0%
+  - Chamber = 70%
+
+- Matreio3D White
+
+## Measurements
+
+For a print that lasted 35 minutes
+
+I activated the Aux Fan to 100% after the print
+
+
+| Status          | Sensor location  | TVOC                  | HCHO  | PM1.0 | PM2.5 | PM10 |
+|-----------------|------------------|-----------------------|-------|-------|-------|------|
+| Before printing |                  |                       |       |       |       |      |
+|                 | On the printer   | 0,252                 | 0,036 | 001   | 003   | 004  |
+| While printing  |                  |                       |       |       |       |      |
+|                 | On the printer   | 0,266                 | 0,04  | 001   | 003   | 004  |
+|                 | In the enclosure | 4,620                 | 0,729 | 001   | 003   | 004  |
+| After print     |                  |                       |       |       |       |      |
+|                 | In the enclosure | 6.227 (0h00)          | 0,778 | 001   | 003   | 004  |
+|                 |                  | 4,567 (00h05)         | 0,729 |       |       |      |
+|                 |                  | 4.515 (00h09)         | 0,469 |       |       |      |
+
+## Conclusion
+The Bento Box Filter does seem to filter much even with the aux fan. May be I have too much carbon in the filter preventing the air to flow??
+More tests to come on that.
 
 # Quality Reference
 
